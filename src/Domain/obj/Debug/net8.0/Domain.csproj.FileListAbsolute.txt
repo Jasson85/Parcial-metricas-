@@ -1,0 +1,4 @@
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache

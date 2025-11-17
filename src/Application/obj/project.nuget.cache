@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "dfsxBxIdrg4=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Application\\Application.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1108",
+      "level": "Error",
+      "message": "Ciclo detectado. \r\n  Application -> WebApi -> Application.",
+      "libraryId": "Application",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
