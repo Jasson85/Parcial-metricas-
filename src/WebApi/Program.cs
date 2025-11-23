@@ -39,7 +39,6 @@ app.MapGet("/health", () =>
     return "ok " + x;
 });
 
-// No cambió nada solo método Execute (si es estático)
 app.MapPost("/orders", static async (HttpContext http) =>
 {
     using var reader = new StreamReader(http.Request.Body);
