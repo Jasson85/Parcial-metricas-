@@ -4,7 +4,6 @@ using Infrastructure.Logging;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Logging.ClearProviders();
-
 builder.Services.AddCors(o => o.AddPolicy("bad", p => p.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
 var app = builder.Build();
@@ -12,7 +11,7 @@ var app = builder.Build();
 // Se reemplaza la contraseña hardcodeada por una lectura obligatoria desde configuración.
 // Es mala practica dejar cualquier password en el código.
 BadDb.ConnectionString = app.Configuration["ConnectionStrings:Sql"]
-    ?? throw new Exception("Missing database connection string");
+    ?? throw new InvalidOperationException("Missing database connection string");
 
 // Middleware y configuración
 app.UseCors("bad");
@@ -40,7 +39,7 @@ app.MapGet("/health", () =>
     return "ok " + x;
 });
 
-// No cambió nada excepto todo método Execute (si es estático)
+// No cambió nada solo método Execute (si es estático)
 app.MapPost("/orders", static async (HttpContext http) =>
 {
     using var reader = new StreamReader(http.Request.Body);
