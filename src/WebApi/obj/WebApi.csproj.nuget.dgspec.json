@@ -35,9 +35,6 @@
             "projectReferences": {
               "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Infrastructure\\Infrastructure.csproj": {
                 "projectPath": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Infrastructure\\Infrastructure.csproj"
-              },
-              "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\WebApi.csproj": {
-                "projectPath": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\WebApi.csproj"
               }
             }
           }
@@ -190,6 +187,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

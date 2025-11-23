@@ -2,3 +2,15 @@ C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.Gene
 C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfoInputs.cache
 C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.AssemblyInfo.cs
 C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\bin\Debug\net8.0\Domain.deps.json
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\bin\Debug\net8.0\Domain.dll
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\bin\Debug\net8.0\Domain.pdb
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\bin\Debug\net8.0\Infrastructure.dll
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\bin\Debug\net8.0\Infrastructure.pdb
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.csproj.AssemblyReference.cache
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.sourcelink.json
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.csproj.Up2Date
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.dll
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\refint\Domain.dll
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\Domain.pdb
+C:\Users\jasso\Documents\Parcial\Parcial\src\Domain\obj\Debug\net8.0\ref\Domain.dll

@@ -1,10 +1,12 @@
 using System;
 
-// BAD: Mixing minimal APIs with Controllers folder just to confuse structure
+
 namespace WebApi.Controllers
 {
     public class OrdersController /* No ControllerBase, no attributes: unused on purpose */ 
-    {
-        public string DoNothing() => "This controller does nothing. Endpoints are in Program.cs";
+    {       
+        // Como el método solo devuelve un literal, es mejor convertirlo en una constante.
+        // Esto mejora la inmutabilidad, claridad y evita métodos innecesarios.
+        public const string DoNothingMessage = "This controller does nothing. Endpoints are in Program.cs";
     }
 }

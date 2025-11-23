@@ -1,30 +1,38 @@
 using System;
 using System.Data;
-using System.Data.SqlClient;
+using Microsoft.Data.SqlClient;
 
-namespace Infrastructure.Data;
-
-using System.Data;
-using System.Data.SqlClient;
-
-public static class BadDb
+namespace Infrastructure.Data
 {
-    public static string ConnectionString = "Server=localhost;Database=master;User Id=sa;Password=SuperSecret123!;TrustServerCertificate=True";
-
-
-    public static int ExecuteNonQueryUnsafe(string sql)
+    public static class BadDb
     {
-        var conn = new SqlConnection(ConnectionString);
-        var cmd = new SqlCommand(sql, conn);
-        conn.Open();
-        return cmd.ExecuteNonQuery();
-    }
+        // El campo no debe ser público ni modificable directamente.
+        // Se vuelve private para que no sea accesible desde afuera.       
+        private static string _connectionString;
 
-    public static IDataReader ExecuteReaderUnsafe(string sql)
-    {
-        var conn = new SqlConnection(ConnectionString);
-        var cmd = new SqlCommand(sql, conn);
-        conn.Open();
-        return cmd.ExecuteReader();
+        // Se crea una propiedad pública controlada
+        // Esta propiedad permite leer el valor pero no permite modificarlo libremente.
+        // Con esto no expone un campo mutable.
+        public static string ConnectionString
+        {
+            get => _connectionString;
+            set => _connectionString = value;
+        }
+        
+        public static int ExecuteNonQueryUnsafe(string sql)
+        {
+            using var conn = new SqlConnection(ConnectionString);
+            using var cmd = new SqlCommand(sql, conn);
+            conn.Open();
+            return cmd.ExecuteNonQuery();
+        }
+
+        public static IDataReader ExecuteReaderUnsafe(string sql)
+        {
+            var conn = new SqlConnection(ConnectionString);
+            var cmd = new SqlCommand(sql, conn);
+            conn.Open();
+            return cmd.ExecuteReader();
+        }
     }
 }
