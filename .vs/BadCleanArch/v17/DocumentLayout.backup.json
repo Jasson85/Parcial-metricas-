@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\WebApi\\WebApi.csproj|c:\\users\\jasso\\documents\\parcial\\parcial\\src\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\WebApi\\WebApi.csproj|solutionrelative:src\\webapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\WebApi\\WebApi.csproj|c:\\users\\jasso\\documents\\parcial\\parcial\\src\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{44444444-4444-4444-4444-444444444444}|src\\WebApi\\WebApi.csproj|solutionrelative:src\\webapi\\webapi.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\Domain\\Domain.csproj|c:\\users\\jasso\\documents\\parcial\\parcial\\src\\domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{11111111-1111-1111-1111-111111111111}|src\\Domain\\Domain.csproj|solutionrelative:src\\domain\\entities\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 55,
+          "SelectedChildIndex": 48,
           "Children": [
             {
               "$type": "Bookmark",
@@ -242,7 +250,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\WebApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\appsettings.json",
+              "RelativeToolTip": "src\\WebApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-23T20:12:02.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WebApi",
+              "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\WebApi.csproj",
+              "RelativeDocumentMoniker": "src\\WebApi\\WebApi.csproj",
+              "ToolTip": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\WebApi.csproj",
+              "RelativeToolTip": "src\\WebApi\\WebApi.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-23T20:08:40.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Application.csproj",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "src\\Application\\Application.csproj",
@@ -255,7 +289,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Logger.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Infrastructure\\Logging\\Logger.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Logging\\Logger.cs",
@@ -263,12 +297,11 @@
               "RelativeToolTip": "src\\Infrastructure\\Logging\\Logger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:41:52.658Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T13:41:52.658Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "OrderService.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Domain\\Services\\OrderService.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Services\\OrderService.cs",
@@ -276,12 +309,11 @@
               "RelativeToolTip": "src\\Domain\\Services\\OrderService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T13:34:38.648Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T13:34:38.648Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "CreateOrderUseCase.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\CreateOrderUseCase.cs",
               "RelativeDocumentMoniker": "src\\WebApi\\CreateOrderUseCase.cs",
@@ -289,12 +321,11 @@
               "RelativeToolTip": "src\\WebApi\\CreateOrderUseCase.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwA8AAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T23:00:58.042Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T23:00:58.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "src\\WebApi\\Controllers\\OrdersController.cs",
@@ -302,12 +333,11 @@
               "RelativeToolTip": "src\\WebApi\\Controllers\\OrdersController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T23:00:48.626Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T23:00:48.626Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\WebApi\\Program.cs",
               "RelativeDocumentMoniker": "src\\WebApi\\Program.cs",
@@ -315,12 +345,11 @@
               "RelativeToolTip": "src\\WebApi\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T20:03:05.148Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T20:03:05.148Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "BadDb.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Infrastructure\\Data\\BadDb.cs",
               "RelativeDocumentMoniker": "src\\Infrastructure\\Data\\BadDb.cs",
@@ -328,25 +357,24 @@
               "RelativeToolTip": "src\\Infrastructure\\Data\\BadDb.cs",
               "ViewState": "AgIAAA8AAAAAAAAAAAAgwBkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T20:02:27.516Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-17T20:02:27.516Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Domain\\Entities\\Order.cs",
               "RelativeDocumentMoniker": "src\\Domain\\Entities\\Order.cs",
               "ToolTip": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Domain\\Entities\\Order.cs",
               "RelativeToolTip": "src\\Domain\\Entities\\Order.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T20:02:09.958Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CreateOrder.cs",
               "DocumentMoniker": "C:\\Users\\jasso\\Documents\\Parcial\\Parcial\\src\\Application\\UseCases\\CreateOrder.cs",
               "RelativeDocumentMoniker": "src\\Application\\UseCases\\CreateOrder.cs",
