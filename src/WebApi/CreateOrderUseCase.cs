@@ -13,7 +13,7 @@ namespace WebApi.useCases
     /// </summary>
     public class CreateOrderUseCase
     {
-        public CreateOrderUseCase()
+        protected CreateOrderUseCase()
         {
         }
         // Mejora la claridad se entiende que no depende de un objeto.
@@ -23,8 +23,11 @@ namespace WebApi.useCases
         {
             Logger.Log("CreateOrderUseCase starting");
             var order = OrderService.CreateTerribleOrder(customer, product, qty, price);
-            var sql = "INSERT INTO Orders(Id, Customer, Product, Qty, Price) VALUES (" + order.Id + ", '" + customer + "', '" + product + "', " + qty + ", " + price + ")";
+
+            var sql = "INSERT INTO Orders(Id, Customer, Product, Qty, Price) VALUES (" + order.Id + ", '" 
+                + customer + "', '" + product + "', " + qty + ", " + price + ")";
             Logger.Try(() => BadDb.ExecuteNonQueryUnsafe(sql)); // swallow failures silently
+
             System.Threading.Thread.Sleep(1500);
             return order;
         }

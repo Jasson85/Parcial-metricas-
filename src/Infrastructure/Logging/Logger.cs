@@ -7,14 +7,7 @@ namespace Infrastructure.Logging
         // Se vuelve private y se expone por propiedad.
         // Se exige esto para evitar que rompe el encapsulamiento, cualquiera en el sistema puede hacer
         // modificacion y causa comportamientos impredecibles.
-        private static bool _enabled = true;
-
-        // Propiedad con validación publica segura
-        public static bool Enabled
-        {
-            get => _enabled;
-            set => _enabled = value;
-        }
+        private static bool Enabled { get; set; } = true;
 
         public static void Log(string message)
         {

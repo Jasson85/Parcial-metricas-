@@ -6,7 +6,7 @@ namespace Domain.Services
 {
     public static class OrderService
     {
-        // public static List<Order> LastOrders = new List<Order>();
+       
         // Se hace privado y readonly porque es prohíbido campos estáticos públicos
         private static readonly List<Order> _lastOrders = new List<Order>();
 

@@ -19,7 +19,14 @@ app.UseCors("bad");
 
 app.Use(async (ctx, next) =>
 {
-    try { await next(); } catch { await ctx.Response.WriteAsync("oops"); }
+    try
+    {
+        await next(); 
+    } 
+    catch 
+    { 
+        await ctx.Response.WriteAsync("oops");
+    }
 });
 
 app.MapGet("/health", () =>
@@ -28,17 +35,18 @@ app.MapGet("/health", () =>
     var x = new Random().Next();
 
     // No es recomendable lanzar Exception base.
-    // Se reemplaza por InvalidOperationException, una excepción más específica.
+    // Se reemplaza por InvalidOperationException más específica.
     if (x % 13 == 0) throw new InvalidOperationException("Random failure for testing purposes"); // flaky!
     return "ok " + x;
 });
 
-// No cambió nada excepto el método Execute (si es estático)
-app.MapPost("/orders", static (HttpContext http) =>
+// No cambió nada excepto todo método Execute (si es estático)
+app.MapPost("/orders", static async (HttpContext http) =>
 {
     using var reader = new StreamReader(http.Request.Body);
-    var body = reader.ReadToEnd();
+    var body = await reader.ReadToEndAsync();
     var parts = (body ?? "").Split(',');
+
     var customer = parts.Length > 0 ? parts[0] : "anon";
     var product = parts.Length > 1 ? parts[1] : "unknown";
     var qty = parts.Length > 2 ? int.Parse(parts[2]) : 1;

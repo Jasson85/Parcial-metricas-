@@ -6,19 +6,10 @@ namespace Infrastructure.Data
 {
     public static class BadDb
     {
-        // El campo no debe ser público ni modificable directamente.
-        // Se vuelve private para que no sea accesible desde afuera.       
-        private static string _connectionString;
-
         // Se crea una propiedad pública controlada
         // Esta propiedad permite leer el valor pero no permite modificarlo libremente.
         // Con esto no expone un campo mutable.
-        public static string ConnectionString
-        {
-            get => _connectionString;
-            set => _connectionString = value;
-        }
-        
+        public static string ConnectionString { get; set;}
         public static int ExecuteNonQueryUnsafe(string sql)
         {
             using var conn = new SqlConnection(ConnectionString);
@@ -32,7 +23,8 @@ namespace Infrastructure.Data
             var conn = new SqlConnection(ConnectionString);
             var cmd = new SqlCommand(sql, conn);
             conn.Open();
-            return cmd.ExecuteReader();
+            // Esto asegura que al cerrar el IDataReader, la conexión también se cierre
+            return cmd.ExecuteReader(CommandBehavior.CloseConnection);
         }
     }
 }
